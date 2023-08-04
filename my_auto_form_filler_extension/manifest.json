@@ -1,0 +1,41 @@
+{
+    "manifest_version": 3,
+    "name": "Auto Form Filler",
+    "version": "1.0",
+    "description": "Automatically fill forms on specific websites.",
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "permissions": [
+        "tabs",
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://newchip.com/*",
+                "https://angelpad.com/*",
+                "https://www.eranyc.com/apply/*",
+                "https://www.ycombinator.com/apply/*",
+                "https://www.beondeck.com/x/*",
+                "https://nextgrid.ai/ai-startup-accelerator/*",
+                "https://jsf.co/*",
+                "https://alphalab.org/apply/*",
+                "https://highalpha.com/build-with-us/*",
+                "https://www.betaworks-studios.com/*",
+                "https://accelerator.paralect.com/*",
+                "https://a16z.com/programs-a16z-start/*",
+                "https://airtable.com/shrcl6C046vexHoVR/*",
+                "https://www.evca.org/fellowship/*",
+                "https://www.pareto20.com/*",
+                "https://www.dreamit.com/apply/*"
+            ],
+            "js": [
+                "content_script.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
